@@ -1,5 +1,4 @@
-// pages/Home.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import WineCard from '../components/WineCard';
 import Filter from '../components/Filter';
 import '../styles/Home.css';
@@ -88,11 +87,15 @@ const Home = () => {
     }
   ]);
 
-  const [filteredWines, setFilteredWines] = useState(wines);
+  const [filteredWines, setFilteredWines] = useState([]);
   const [filters, setFilters] = useState({
     country: 'all',
     sort: 'name'
   });
+
+  useEffect(() => {
+    handleFilterChange(filters);
+  }, []);
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);

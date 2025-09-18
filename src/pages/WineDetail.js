@@ -1,4 +1,3 @@
-// pages/WineDetail.js
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../styles/WineDetail.css';
@@ -6,7 +5,7 @@ import '../styles/WineDetail.css';
 const WineDetail = () => {
   const { id } = useParams();
   
-  // This would typically come from an API or context
+  // Dados mockados - em uma aplicação real viriam de uma API
   const wine = {
     id: 1,
     name: "Terra Generation Primitivo di Manduria Riserva 2020",
@@ -19,7 +18,7 @@ const WineDetail = () => {
     taste: "On the palate, this wine reveals rich flavors of dark cherry, plum, and blackberry compote, complemented by notes of chocolate, tobacco, and vanilla from oak aging. The wine is well-structured with balanced acidity and firm yet refined tannins. The finish is persistent with a pleasant warmth and hints of sweet spice.",
     pairing: "Perfect with grilled meats, roasted lamb, aged cheeses, and hearty pasta dishes.",
     alcohol: "14.5%",
-    image: "/images/wine1-detail.jpg"
+    image: "/images/wine1.jpg"
   };
 
   return (
