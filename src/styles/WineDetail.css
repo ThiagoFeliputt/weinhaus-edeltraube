@@ -1,0 +1,109 @@
+/* styles/WineDetail.css */
+.wine-detail {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #57182C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.wine-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+.wine-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wine-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wine-info h1 {
+  color: #57182C;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.wine-info h2 {
+  color: #885B63;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.wine-meta {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.wine-meta p {
+  margin-bottom: 0.5rem;
+}
+
+.wine-meta .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #57182C;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.wine-description,
+.wine-tasting,
+.wine-pairing {
+  margin-bottom: 2rem;
+}
+
+.wine-description h3,
+.wine-tasting h3,
+.wine-pairing h3 {
+  color: #57182C;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.add-to-cart {
+  background: #57182C;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #6d1f3a;
+}
+
+@media (max-width: 968px) {
+  .wine-detail-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .wine-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

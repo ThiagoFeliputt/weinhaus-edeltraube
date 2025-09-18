@@ -1,0 +1,38 @@
+/* styles/Filter.css */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: bold;
+  color: #57182C;
+}
+
+.filter-group select {
+  padding: 0.5rem;
+  border: 1px solid #885B63;
+  border-radius: 4px;
+  background: white;
+  color: #363636;
+  min-width: 180px;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
